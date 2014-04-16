@@ -1,0 +1,71 @@
+.youmeb-toggle {
+  position: relative;
+  display: inline-block;
+  width: 2.25em;
+  height: 1em;
+  line-height: 1em;
+  background: #eee;
+  border-radius: 1em;
+  white-space: nowrap;
+  overflow: hidden;
+  border: 1px #eee solid;
+  cursor: pointer;
+  transition: all .4s;
+}
+
+.youmeb-toggle.off {
+  background: #ccc;
+  border-color: #ccc;
+}
+
+.youmeb-toggle.off .youmeb-toggle-wrapper {
+  left: -100%;
+}
+
+.youmeb-toggle.off .youmeb-toggle-switch {
+  margin-left: 0;
+}
+
+.youmeb-toggle-checkbox {
+  display: none;
+}
+
+.youmeb-toggle-wrapper {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 200%;
+  height: 100%;
+  transition: all .4s;
+}
+
+.youmeb-toggle-switch {
+  position: absolute;
+  left: 50%;
+  width: 1em;
+  height: 1em;
+  margin-left: -1em;
+  background: #fff;
+  border-radius: 1em;
+  vertical-align: middle;
+  transition: all .4s;
+}
+
+.youmeb-toggle-on,
+.youmeb-toggle-off {
+  position: absolute;
+  top: 0;
+  width: 3em;
+  text-align: center;
+  font-size: .5em;
+  line-height: 2em;
+  cursor: pointer;
+}
+
+.youmeb-toggle-on {
+  left: 0;
+}
+
+.youmeb-toggle-off {
+  right: 0;
+}

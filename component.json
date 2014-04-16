@@ -1,0 +1,22 @@
+{
+  "name": "toggle",
+  "repo": "youmeb/toggle",
+  "version": "0.0.0",
+  "license": "MIT",
+  "scripts": [
+    "index.js"
+  ],
+  "templates": [
+    "template.html"
+  ],
+  "styles": [
+    "style.css"
+  ],
+  "dependencies": {
+    "component/classes": "*",
+    "component/domify": "*",
+    "component/emitter": "*",
+    "yields/prevent": "*",
+    "component/reactive": "*"
+  }
+}

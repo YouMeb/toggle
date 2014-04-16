@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="build/build.css">
+  <style>
+    body {
+      font-size: 24px;
+    }
+  </style>
+</head>
+<body>
+<script src="build/build.js"></script>
+<script>
+  var Toggle = require('toggle');
+  var toggle = new Toggle();
+
+  toggle.name('test');
+  toggle.labels('oon', 'of');
+
+  document.body.appendChild(toggle.el);
+  toggle.on('change', function (val) {
+    alert(val);
+  });
+</script>
+</body>
+</html>
