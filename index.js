@@ -57,6 +57,7 @@ proto.name = function (name) {
   this.view.set('name', name);
 };
 
-proto.onClick = function () {
+proto.onClick = function (e) {
+  prevent(e);
   this.value(!this.value());
 };
