@@ -26,10 +26,10 @@ function Toggle(val) {
     delegate: this
   });
   this.checkbox = this.el.querySelector('.youmeb-toggle-checkbox');
-  this.value(!!val);
+  this.value(!!val, true);
 }
 
-proto.value = function (val) {
+proto.value = function (val, dontEmit) {
   if (arguments.length) {
     if (val) {
       this.classes.remove('off');
@@ -38,7 +38,7 @@ proto.value = function (val) {
     }
     if (this.checkbox.checked !== val) {
       this.checkbox.checked = val;
-      this.emit('change', val);
+      !dontEmit && this.emit('change', val);
     }
   } else {
     return this.checkbox.checked;
